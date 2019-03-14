@@ -1,0 +1,29 @@
+synonims = {}
+w={}
+def synonims_maker():
+    synonims ={}
+    b = int(input())
+    for i in range(0,b):
+        a = str(input())
+        q=a.split(' ')
+        if q[0] =="ADD":
+        
+            synonims [q[1]]=q[2]
+    print(synonims)
+    return synonims
+w=synonims_maker()
+print(w)
+
+def  check():
+    e = str(input())
+    r = e.split(' ')
+    hel = w.keys()
+    
+    
+    if r[0] =='COUNT' and w[r[1]]==r[2]:
+            print("YES!")
+    else:
+              print('NO!')
+        
+        
+check()
