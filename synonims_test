@@ -1,0 +1,23 @@
+import synonims
+
+q = {'LOL':'KEK'}
+def add_test():
+    a=synonims.synonims_maker(1,'ADD LOL KEK')
+    if a ==q:
+        print('SUCCESS!')
+    else:
+        print('FAILED!')
+        
+def check_test():
+    b=synonims.check('CHECK LOL KEK',q)
+    if  b=='YES!':
+        print('SUCCESS!')
+    else:
+        print("FAILED!")
+    
+
+
+
+
+check_test()
+add_test()
