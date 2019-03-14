@@ -1,0 +1,20 @@
+def synonims_maker():
+    synonims ={}
+    b = int(input())
+    for i in range(0,b):
+        a = str(input())
+        q=a.split(' ')
+        if q[0] =="ADD":
+        
+            synonims [q[1]]=q[2]
+    print(synonims)
+synonims_maker()
+
+def  chek():
+    if q[0] =='COUNT' and q[1] in synonims.keys() and q[2] in synonims.value():
+        print("YES!')
+    else:
+              print('NO!')
+        
+        
+        
